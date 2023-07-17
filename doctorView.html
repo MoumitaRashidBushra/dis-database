@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Database</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+
+<body>
+    <h1>View Database</h1>
+
+    <form action="doctorView.php" method="POST">
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div> <br>
+        <label for="doctor_id">Patient ID:</label>
+        <input type="text" name="doctor_id" id="doctor_id" required>
+
+        <input type="submit" value="View Data">
+    </form>
+</body>
+
+</html>

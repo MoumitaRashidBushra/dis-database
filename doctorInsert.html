@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insert Doctor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="insert.html">Patients</a></li>
+            <li><a href="doctorInsert.html">Doctors</a></li>
+            <li><a href="medicalRecordsInsert.html">Medical Records</a></li>
+            <li><a href="labresultsInsert.html">Lab Results</a></li>
+            <li><a href="appInsert.html">Appointments</a></li>
+            <li><a href="specialInsert.html">Specialists</a></li>
+            <li><a href="billsInsert.html">Bills</a></li>
+            <li><a href="payInsert.html">Pay Bills</a></li>
+            <li><a href="paymentsInsert.html">Payments</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Insert Doctor</h1>
+        <form action="doctorInsert.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="Gynecology">Gynecology</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Neurologist">Neurologist</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Urologist">Urologist</option>
+                    <option value="Oncologist">Oncologist</option>
+                    <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+
+            <button type="submit">Insert</button>
+        </form>
+    </div>
+</body>
+
+</html>

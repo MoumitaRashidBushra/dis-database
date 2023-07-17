@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete Patient</title>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+    <header>
+        <h1>Delete Patient</h1>
+    </header>
+
+    <section class="content">
+        <form method="POST" action="insertDelet.php">
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div> <br>
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patient_id" name="patient_id" required><br>
+
+
+
+
+            <input type="submit" value="Delete">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Medical Database System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

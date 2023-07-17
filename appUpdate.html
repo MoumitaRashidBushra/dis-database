@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Patient</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Update Appointment</h1>
+    </header>
+
+    <section class="content">
+        <form method="POST" action="appUpdate.php">
+            <div class="form-group">
+                <label for="patient_id">Patient Id:</label>
+                <input type="text" id="patient_id" name="patient_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="doctor_id">Doctor Id:</label>
+                <input type="text" id="doctor_id" name="doctor_id" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="appointment_date">Date of Appointment:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="appointment_time">Time of Appointment:</label>
+                <input type="time" id="appointment_time" name="appointment_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <input type="submit" value="Update">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Medical Database System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

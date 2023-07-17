@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insert Patient</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="insert.html">Patients</a></li>
+            <li><a href="doctorInsert.html">Doctors</a></li>
+            <li><a href="medicalRecordsInsert.html">Medical Records</a></li>
+            <li><a href="labresultsInsert.html">Lab Results</a></li>
+            <li><a href="appInsert.html">Appointments</a></li>
+            <li><a href="specialInsert.html">Specialists</a></li>
+            <li><a href="billsInsert.html">Bills</a></li>
+            <li><a href="payInsert.html">Pay Bills</a></li>
+            <li><a href="paymentsInsert.html">Payments</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Insert Patient</h1>
+        <form action="insert.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Insert</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medical Database Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        #pageContent {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Medical Database Dashboard</h1>
+
+    <div class="dropdown">
+        <label for="patients">Select what you Want:</label>
+        <div class="dropdown-content" id="patientsDropdown">
+            <a href="insert.html">Insert</a>
+            <a href="view.html">View</a>
+            <a href="update.html">Update</a>
+            <a href="delete.html">Delete</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+
+    <div id="pageContent">
+        <!-- The selected patient's page content will be displayed here -->
+    </div>
+
+    <script>
+        function loadPageContent(selectedPage) {
+            var pageContentElement = document.getElementById("pageContent");
+
+            // Perform an AJAX request or fetch the page content for the selected patient
+            // Replace the following code with your own logic to retrieve the page content
+            // You can use JavaScript fetch or jQuery AJAX for this purpose
+
+            // Example code to fetch the page content from the selected page URL
+            fetch(selectedPage)
+                .then(response => response.text())
+                .then(data => {
+                    // Display the page content on the page
+                    pageContentElement.innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("Error fetching page content:", error);
+                });
+        }
+
+        // Get the dropdown links and attach event listeners
+        var dropdownLinks = document.querySelectorAll(".dropdown-content a");
+        dropdownLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                var selectedPage = link.getAttribute("href");
+                loadPageContent(selectedPage);
+            });
+        });
+    </script>
+</body>
+
+</html>

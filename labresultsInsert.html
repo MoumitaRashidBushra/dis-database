@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insert Lab Results</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="insert.html">Patients</a></li>
+            <li><a href="doctorInsert.html">Doctors</a></li>
+            <li><a href="medicalRecordsInsert.html">Medical Records</a></li>
+            <li><a href="labresultsInsert.html">Lab Results</a></li>
+            <li><a href="appInsert.html">Appointments</a></li>
+            <li><a href="specialInsert.html">Specialists</a></li>
+            <li><a href="billsInsert.html">Bills</a></li>
+            <li><a href="payInsert.html">Pay Bills</a></li>
+            <li><a href="paymentsInsert.html">Payments</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Insert Lab Results</h1>
+        <form action="labresultsInsert.php" method="POST">
+
+
+            <div class="form-group">
+                <label for="patient_id">Patient Id:</label>
+                <input type="text" id="patient_id" name="patient_id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="test_name">Test Name:</label>
+                <input type="text" id="test_name" name="test_name" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="result_value">Value of Result:</label>
+                <input type="text" id="result_value" name="result_value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="result_date">Date of Result:</label>
+                <input type="date" id="result_date" name="result_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <button type="submit">Insert</button>
+        </form>
+    </div>
+</body>
+
+</html>

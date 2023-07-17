@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insert Payments</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="insert.html">Patients</a></li>
+            <li><a href="doctorInsert.html">Doctors</a></li>
+            <li><a href="medicalRecordsInsert.html">Medical Records</a></li>
+            <li><a href="labresultsInsert.html">Lab Results</a></li>
+            <li><a href="appInsert.html">Appointments</a></li>
+            <li><a href="specialInsert.html">Specialists</a></li>
+            <li><a href="billsInsert.html">Bills</a></li>
+            <li><a href="payInsert.html">Pay Bills</a></li>
+            <li><a href="paymentsInsert.html">Payments</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>Insert Payments</h1>
+        <form action="paymentsInsert.php" method="POST">
+            <div class="form-group">
+
+                <div class="form-group">
+                    <label for="patient_id">Patient Id:</label>
+                    <input type="text" id="patient_id" name="patient_id" required>
+                </div>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="payment_date">Date of Payment:</label>
+                <input type="date" id="payment_date" name="payment_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit">Insert</button>
+        </form>
+    </div>
+</body>
+
+</html>
