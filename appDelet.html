@@ -3,17 +3,22 @@
 
 <head>
     <title>Delete Patient</title>
-    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Delete Appointment</h1>
-    </header>
 
-    <section class="content">
+
+    <div class="container">
         <form method="POST" action="appDelet.php">
-
+            <h2>Delete Appointment !!</h2>
             <div class="form-group">
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
@@ -23,18 +28,15 @@
                 </select>
             </div> <br>
             <label for="patient_id">Patient ID:</label>
-            <input type="text" id="patient_id" name="patient_id" required><br>
+            <input type="text" id="patient_id" name="patient_id" required><br> <br>
 
 
 
 
             <input type="submit" value="Delete">
         </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Medical Database System. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 
 </html>

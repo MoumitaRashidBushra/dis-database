@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $specialization = $_POST['specialization'];
+    $gender = $_POST['gender'];
     $doctor_id = $_POST['doctor_id'];
         // Connect to the appropriate database based on gender
-        if ($specialization === 'Gynecology') {
+        if ($gender === 'Female') {
             $dbname = 'medical_database_for_female';
         } else {
             $dbname = 'medical_database';
@@ -22,11 +22,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve the patient ID from the form submission
+// Retrieve the doctor ID from the form submission
 $doctor_id = $_POST['doctor_id'];
 
-// Prepare the SQL statement to fetch the patient data
-$sql = "SELECT * FROM doctors WHERE doctor_id = '$doctor_id'";
+// Prepare the SQL statement to fetch the doctor data
+$sql = "SELECT * FROM appointments WHERE doctor_id = '$doctor_id'";
 
 // Execute the query
 $result = $conn->query($sql);
@@ -37,23 +37,22 @@ if ($result->num_rows > 0) {
     echo "<table>
         <tr>
             <th>Patient ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Specialization</th>
-            
-            <th>Contact Number</th>
-            <th>Address</th>
+            <th>Doctor Id</th>
+            <th>Date of Appointment</th>
+            <th>Time of Appointment</th>
+            <th>Gender</th>
+           
         </tr>";
 
     // Fetch each row and display the data
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
+            <td>".$row['patient_id']."</td>
             <td>".$row['doctor_id']."</td>
-            <td>".$row['first_name']."</td>
-            <td>".$row['last_name']."</td>
-            <td>".$row['specialization']."</td>
-            <td>".$row['contact_number']."</td>
-            <td>".$row['email']."</td>
+            <td>".$row['appointment_date']."</td>
+            <td>".$row['appointment_time']."</td>
+            <td>".$row['gender']."</td>
+        
         </tr>";
     }
 

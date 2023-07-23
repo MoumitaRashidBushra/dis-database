@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Update Doctor</title>
+    <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
@@ -15,22 +15,14 @@
 
 <body>
     <div class="container">
+        <form method="post" action="doctorLogin.php">
+            <h2>Please Login !!</h2>
 
-        <h1> Update Doctor</h1>
-        <form method="POST" action="doctorUpdate.php">
+
             <div class="form-group">
-                <label for="doctor_id">Doctor ID:</label>
-                <input type="text" id="doctor_id" name="doctor_id" required><br>
-
                 <label for="first_name">First Name:</label>
                 <input type="text" id="first_name" name="first_name" required>
             </div>
-
-            <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
-            </div>
-
 
             <div class="form-group">
                 <label for="specialization">Specialization:</label>
@@ -46,26 +38,17 @@
 
                 </select>
             </div>
-
-
             <div class="form-group">
                 <label for="contact_number">Contact Number:</label>
                 <input type="tel" id="contact_number" name="contact_number" required>
             </div>
 
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+            <button type="submit" name="login">Login</button><br><br>
 
-            <input type="submit" value="Update">
         </form>
+
     </div>
-
-
-
-
 </body>
 
 </html>

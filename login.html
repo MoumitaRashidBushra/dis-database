@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Insert Patient</title>
+    <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
@@ -14,19 +14,22 @@
 </head>
 
 <body>
-
     <div class="container">
+        <form method="post" action="login.php">
+            <h2>Please Login !!</h2>
+            <!-- <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit" name="login">Login</button> -->
 
-        <h1> Patient Registration</h1>
-        <form action="insert.php" method="POST">
             <div class="form-group">
                 <label for="first_name">First Name:</label>
                 <input type="text" id="first_name" name="first_name" required>
             </div>
-
             <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" required>
             </div>
 
             <div class="form-group">
@@ -43,18 +46,10 @@
                 </select>
             </div>
 
-            <div class="form-group">
-                <label for="contact_number">Contact Number:</label>
-                <input type="tel" id="contact_number" name="contact_number" required>
-            </div>
+            <button type="submit" name="login">Login</button><br><br>
 
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="4" required></textarea>
-            </div>
-
-            <button type="submit">Insert</button>
         </form>
+        <a href="insert.html"><button>Don't have an account?</button></a>
     </div>
 </body>
 

@@ -3,16 +3,22 @@
 
 <head>
     <title>Update Patient</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Update Appointment</h1>
-    </header>
 
-    <section class="content">
+
+    <div class="container">
         <form method="POST" action="appUpdate.php">
+            <h2>Update Appointment</h2>
             <div class="form-group">
                 <label for="patient_id">Patient Id:</label>
                 <input type="text" id="patient_id" name="patient_id" required>
@@ -46,11 +52,8 @@
             </div>
             <input type="submit" value="Update">
         </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Medical Database System. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 
 </html>

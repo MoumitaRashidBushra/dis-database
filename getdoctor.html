@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Database</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <form action="g.php" method="POST">
+
+            <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="Gynecology">Gynecology</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Neurologist">Neurologist</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dentist">Dentist</option>
+                    <option value="Urologist">Urologist</option>
+                    <option value="Oncologist">Oncologist</option>
+                    <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+
+                </select>
+            </div> <br>
+            <br><br>
+
+            <input type="submit" value="Get Doctor">
+        </form>
+
+    </div>
+</body>
+
+</html>

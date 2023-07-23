@@ -2,13 +2,13 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $specialization = $_POST['specialization'];
-    $doctor_id = $_POST['doctor_id'];
+   
         // Connect to the appropriate database based on gender
-        if ($specialization === 'Gynecology') {
-            $dbname = 'medical_database_for_female';
-        } else {
-            $dbname = 'medical_database';
-        }
+    if ($specialization === 'Gynecology') {
+        $dbname = 'medical_database_for_female';
+    } else {
+        $dbname = 'medical_database';
+    }
    
     $servername = "localhost";
     $username = "root";
@@ -23,10 +23,10 @@ if ($conn->connect_error) {
 }
 
 // Retrieve the patient ID from the form submission
-$doctor_id = $_POST['doctor_id'];
+
 
 // Prepare the SQL statement to fetch the patient data
-$sql = "SELECT * FROM doctors WHERE doctor_id = '$doctor_id'";
+$sql = "SELECT * FROM doctors WHERE specialization = '$specialization'";
 
 // Execute the query
 $result = $conn->query($sql);

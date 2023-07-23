@@ -11,13 +11,20 @@
 
     <form action="doctorView.php" method="POST">
         <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
+            <label for="specialization">Specialization:</label>
+            <select id="specialization" name="specialization" required>
+                <option value="Gynecology">Gynecology</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Neurologist">Neurologist</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Urologist">Urologist</option>
+                <option value="Oncologist">Oncologist</option>
+                <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+
             </select>
-        </div> <br>
+        </div>
+        <br>
         <label for="doctor_id">Patient ID:</label>
         <input type="text" name="doctor_id" id="doctor_id" required>
 

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Delete Patient</title>
+    <title>View Medical Records</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
@@ -11,16 +11,14 @@
             background-position: center;
         }
     </style>
+
 </head>
 
 <body>
 
-
     <div class="container">
-
-        <h1> Delete Patient</h1>
-        <form method="POST" action="insertDelet.php">
-
+        <form action="medicalView.php" method="POST">
+            <h2>View Medical Records</h2>
             <div class="form-group">
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
@@ -30,14 +28,13 @@
                 </select>
             </div> <br>
             <label for="patient_id">Patient ID:</label>
-            <input type="text" id="patient_id" name="patient_id" required><br> <br>
+            <input type="text" name="patient_id" id="patient_id" required> <br><br>
 
-
-
-
-            <input type="submit" value="Delete">
+            <input type="submit" value="View Data">
         </form>
+
     </div>
+
 
 </body>
 

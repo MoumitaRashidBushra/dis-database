@@ -1,109 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Medical Website</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/4ee5f1f089.js" crossorigin="anonymous"></script>
+    <title>Home</title>
 </head>
-<style>
-    header {
-        background-image: url('https://img.freepik.com/free-vector/doctor-stethoscope-object-blue-background_1017-14996.jpg?w=740&t=st=1689621321~exp=1689621921~hmac=8df203a28d9a3b505b84ddcdcc8db9d5ff94245bb9946e378970f4b740541dd5');
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
-    }
-</style>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Medical Center</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#doctors">Doctors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-text">
-            <h1>Welcome to Medical Center</h1>
-            <p>Your health is our priority</p>
-            <!-- <a href="#services" class="cta-button">Learn More</a> -->
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, nunc ut iaculis feugiat, enim tellus
-                mattis tortor, ut hendrerit mauris libero et elit. Suspendisse potenti. Nunc eu fringilla nulla.</p>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="service1.png" alt="Service 1">
-                    <h3>Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- Navber start -->
+    <div class=" bg-slate-200">
+        <div class=" container lg:container  lg:mx-auto px-10 lg:px-20 pt-4 pb-4 ">
+            <div class="navbar ">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl">Medical Center</a>
                 </div>
-                <div class="service-item">
-                    <img src="service2.png" alt="Service 2">
-                    <h3>Service 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <img src="service3.png" alt="Service 3">
-                    <h3>Service 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <button class="btn text-white hover:bg-sky-500 btn-info mr-6"><a
+                                    href="adminLogin.html">Admin
+                                </a></button>
+                        </li>
+
+
+                        <li>
+                            <button class="btn text-white hover:bg-sky-500 btn-info mr-6"><a href="login.html">Patient
+                                </a></button>
+                        </li>
+
+                        <li>
+                            <button class="btn text-white hover:bg-sky-500 btn-info mr-6"><a
+                                    href="doctorLogin.html">Doctor</a></button>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="doctors">
-        <div class="container">
-            <h2>Our Doctors</h2>
-            <div class="doctors-grid">
-                <div class="doctor-item">
-                    <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.153242055.1684342499&semt=sph"
-                        alt="Doctor 1">
-                    <h3>Dr. John Doe</h3>
-                    <p>Specialty: Cardiology</p>
-                </div>
-                <div class="doctor-item">
-                    <img src="doctor2.png" alt="Doctor 2">
-                    <h3>Dr. Jane Smith</h3>
-                    <p>Specialty: Dermatology</p>
-                </div>
-                <div class="doctor-item">
-                    <img src="doctor3.png" alt="Doctor 3">
-                    <h3>Dr. David Johnson</h3>
-                    <p>Specialty: Pediatrics</p>
-                </div>
+
+
+    <!-- Navber end -->
+
+
+
+    <!-- Hero start -->
+
+    <div class="hero min-h-screen" style="background-image: url(background.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Medical Center</h1>
+                <p class="mb-5">At the heart of our community, the Medical Center is a beacon of compassion, expertise,
+                    and cutting-edge facilities, empowering individuals on their journey to better health while
+                    nurturing hope and well-being with unwavering dedication.</p>
+                <button class="btn text-white hover:bg-sky-500 btn-info mr-6"><a href="">Explore us
+                    </a></button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+    <!-- hero end -->
+
+    <!--Specialists doctor  start -->
+    <div class=" container lg:container  lg:mx-auto px-10 lg:px-20 pt-4 pb-4 mt-12">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Our Specialists Doctors</h1>
+            <p class="px-12 mt-5 mb-12">Our specialist doctors, a formidable team of expertise and compassion, dedicated
+                to providing exceptional care and transforming lives.Inspired by a passion for healing, our specialist
+                doctors stand as a united
+                force of expertise and compassion, committed to delivering exceptional care and transforming lives with
+                every patient they serve.</p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Medical Center. All rights reserved.</p>
-    </footer>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16 mb-16 ">
+            <div class="col  ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/portrait-doctor_144627-39390.jpg?w=740&t=st=1690122269~exp=1690122869~hmac=4e10895ad9a89029c930301509f9abde6b177f59fb59fa72d7a198c8057e1a88"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Dr. Emily Roberts</h2>
+                        <h2 class=" font-semibold">Gynecology</h2>
+                        <p>Nurturing women's health with expertise and empathy, our gynecologists provide comprehensive
+                            care and support for every stage of life.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/portrait-cheerful-male-doctor-dressed-uniform_171337-1531.jpg?w=740&t=st=1690122516~exp=1690123116~hmac=14beff0762530b532f7db9b28c3053ba23b73bc82f65d502679f0ced4d078ee5"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Dr. Michael Johnson</h2>
+                        <h2 class=" font-semibold">Medicine</h2>
+                        <p>From diagnosis to cure, our dedicated medical team embraces the art and science of medicine
+                            to restore hope and improve lives.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/premium-photo/beautiful-doctor-pointing-fingers_1258-16474.jpg?w=740"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Dr. Sarah Patel</h2>
+                        <h2 class=" font-semibold">Cardiologist</h2>
+                        <p>Guiding hearts towards a healthier rhythm, our skilled cardiologists combine expertise and
+                            compassion to safeguard cardiovascular well-being.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Specialists doctor end -->
+    <!--Patient  start -->
+    <div class=" container lg:container  lg:mx-auto px-10 lg:px-20 pt-4 pb-4 mt-4">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Our Patient Review</h1>
+            <p class="px-12 mt-5 mb-12">Our patients' words speak volumes about their experience: a compassionate
+                and exceptional journey to healing, leaving them with heartfelt gratitude and renewed hope for the
+                future.</p>
+        </div>
+
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-16 mb-20 ">
+            <div class="col  ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1690125083~exp=1690125683~hmac=3566e63b608d973692bbcfab1b808496c7220d03cd7de5d35b1f88fb4f1ee8f0"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Alexander </h2>
+
+                        <p>Truly outstanding medical care!</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall_176420-25024.jpg?w=740&t=st=1690125166~exp=1690125766~hmac=a582a3e8e5b4307f73b339cc4bb50e9bfb2b38651561379a0a815ce4cb65a0cb"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Emily</h2>
+
+                        <p>Impressive care and expertise!</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?w=740&t=st=1690125400~exp=1690126000~hmac=c4c3844816bf2e08635fcc6d5ee27268b90592eda7d543722476254224218598"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Ethan</h2>
+
+                        <p>Top-notch medical attention!</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card w-full bg-base-100  bg-slate-100">
+                    <figure class="px-10 pt-10">
+                        <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?w=740&t=st=1690125348~exp=1690125948~hmac=991f028564de6795c861560230c9b71b25b2668b1d42cc290abaa84c827f52dd"
+                            alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Sophia</h2>
+
+                        <p>Exceptional service all around.</p>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Patient  end -->
+    <!-- footer start -->
+    <div class=" bg-slate-200">
+        <div class=" container lg:container  lg:mx-auto px-10 lg:px-20 pt-4 pb-4 ">
+            <div>
+                <footer class="footer footer-center p-4 bg-base-300 text-base-content font-semibold">
+                    <div>
+                        <p>Copyright © 2023 - All right reserved by Medical Center Database</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- footer end-->
+
+
 </body>
 
 </html>
